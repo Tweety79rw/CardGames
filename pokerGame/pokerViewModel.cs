@@ -53,18 +53,19 @@ namespace pokerGame
             //{
             //    thread = true;
             //    flipThread = new Thread(flipCards);
-            //    flipThread.Start();
+                new Thread(flipCards).Start();
             //}
             
             if(poker._bet < 50 && poker._cash >= 50)
             {
+                firstCardHold = secondCardHold = thirdCardHold = fourthCardHold = fifthCardHold = false;
                 poker._bet = 50;
                 poker._cash -= 50;
                 OnPropertyChanged("Bet");
                 OnPropertyChanged("Cash");
                 //if (thread && Thread.CurrentThread.Name == "mainThread" && flipThread.ThreadState != ThreadState.Unstarted)
                 //    flipThread.Join();
-                onDealCardsClicked();
+               // onDealCardsClicked();
             }
             
         }
@@ -75,6 +76,7 @@ namespace pokerGame
                 new Thread(flipCards).Start();
             if(poker._bet > 0)
             {
+                firstCardHold = secondCardHold = thirdCardHold = fourthCardHold = fifthCardHold = false;
                 poker._bet -= 5;
                 poker._cash += 5;
                 OnPropertyChanged("Bet");
@@ -88,6 +90,7 @@ namespace pokerGame
                 new Thread(flipCards).Start();
             if (poker._bet < 50 && poker._cash >= 5)
             {
+                firstCardHold = secondCardHold = thirdCardHold = fourthCardHold = fifthCardHold = false;
                poker._bet += 5;
                poker._cash -= 5;
                OnPropertyChanged("Bet");
@@ -117,6 +120,7 @@ namespace pokerGame
                 switch (draw)
                 {
                     case 0:
+                        
                         poker.cards.shuffle();
                         firstCardHold = secondCardHold = thirdCardHold = fourthCardHold = fifthCardHold = false;
                         firstCard = poker.cards.getCardImage(poker.cards.dealCard());
