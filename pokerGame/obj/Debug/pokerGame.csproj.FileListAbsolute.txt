@@ -18,3 +18,6 @@ c:\users\tweety\documents\visual studio 2013\Projects\pokerGame\pokerGame\obj\De
 c:\users\tweety\documents\visual studio 2013\Projects\pokerGame\pokerGame\obj\Debug\Views\pokerView.g.cs
 c:\users\tweety\documents\visual studio 2013\Projects\pokerGame\pokerGame\obj\Debug\GeneratedInternalTypeHelper.g.cs
 c:\users\tweety\documents\visual studio 2013\Projects\pokerGame\pokerGame\obj\Debug\pokerGame_MarkupCompile.lref
+C:\Users\Tweety\Documents\GitHub\CardGames\pokerGame\bin\Debug\pokerGame.exe.config
+C:\Users\Tweety\Documents\GitHub\CardGames\pokerGame\obj\Debug\pokerGame.exe
+C:\Users\Tweety\Documents\GitHub\CardGames\pokerGame\obj\Debug\pokerGame.pdb
