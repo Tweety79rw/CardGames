@@ -198,7 +198,7 @@ namespace pokerGame
         {
             get
             {
-                return poker._bet.ToString("C");
+                return "Bet " + poker._bet.ToString("C");
             }
             set
             {
@@ -211,7 +211,7 @@ namespace pokerGame
         {
             get
             {
-                return poker._cash.ToString("C");
+                return "Cash " + poker._cash.ToString("C");
             }
             set
             {

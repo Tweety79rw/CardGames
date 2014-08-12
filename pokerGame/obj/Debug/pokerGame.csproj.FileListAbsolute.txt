@@ -37,3 +37,4 @@ C:\Users\Tweety\Documents\GitHub\CardGames\pokerGame\obj\Debug\MainWindow.baml
 C:\Users\Tweety\Documents\GitHub\CardGames\pokerGame\obj\Debug\pokerGame.g.resources
 C:\Users\Tweety\Documents\GitHub\CardGames\pokerGame\obj\Debug\pokerGame.Properties.Resources.resources
 C:\Users\Tweety\Documents\GitHub\CardGames\pokerGame\obj\Debug\pokerGame.csproj.GenerateResource.Cache
+C:\Users\Tweety\Documents\GitHub\CardGames\pokerGame\obj\Debug\pokerGame.csprojResolveAssemblyReference.cache
