@@ -35,11 +35,13 @@ namespace pokerGame
             mainThread.Name = "mainThread";
             cardsFliped = false;
             _colorSwitch = (Brush)new BrushConverter().ConvertFromString("black");
+           // firstButtonBack = (Brush)new BrushConverter().ConvertFromString("Lightgray");
             DealCards = new DelegateCommand(onDealCardsClicked);
             AddFive = new DelegateCommand(onAddFiveClicked);
             RemoveFive = new DelegateCommand(onRemoveFiveClicked);
             MaxBet = new DelegateCommand(onMaxBetClicked);
             poker = new PokerModel();
+            firstButtonClicked = new DelegateCommand(onFirstButtonClicked);
             draw = 0;
             if (!cardsFliped)
                 new Thread(flipCards).Start();
@@ -478,9 +480,31 @@ namespace pokerGame
                 OnPropertyChanged("colorSwitch");
             }
         }
+        private Brush _firstButtonBack;
+        public Brush firstButtonBack
+        {
+            get
+            {
+                return _firstButtonBack;
+            }
+            set
+            {
+                _firstButtonBack = value;
+                OnPropertyChanged("firstButtonBack");
+            }
+        }
+        public void onFirstButtonClicked()
+        {
+            if(_firstCardHold)
+                firstButtonBack = (Brush)new BrushConverter().ConvertFromString("red");
+            else
+                firstButtonBack = (Brush)new BrushConverter().ConvertFromString("grey");
+            
+        }
         public ICommand DealCards { get; set; }
         public ICommand AddFive { get; set; }
         public ICommand RemoveFive { get; set; }
         public ICommand MaxBet { get; set; }
+        public ICommand firstButtonClicked { get; set; }
     }
 }

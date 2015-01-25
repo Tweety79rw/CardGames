@@ -37,7 +37,9 @@
         <Image Grid.Row="1" Grid.Column="4" Name="Image5" Source="{Binding Path=fifthCard}">
 
         </Image>
-        <ToggleButton Grid.Column="0" Grid.Row="2" Margin="5" IsChecked="{Binding Path=firstCardHold, Mode=TwoWay}">HOLD</ToggleButton>
+        <ToggleButton Grid.Column="0" Name="FirstButton" Grid.Row="2" Margin="5" IsChecked="{Binding Path=firstCardHold, Mode=TwoWay}">
+            HOLD
+        </ToggleButton>
         <ToggleButton Grid.Column="1" Grid.Row="2" Margin="5" IsChecked="{Binding Path=secondCardHold, Mode=TwoWay}">HOLD</ToggleButton>
         <ToggleButton Grid.Column="2" Grid.Row="2" Margin="5" IsChecked="{Binding Path=thirdCardHold, Mode=TwoWay}">HOLD</ToggleButton>
         <ToggleButton Grid.Column="3" Grid.Row="2" Margin="5" IsChecked="{Binding Path=fourthCardHold, Mode=TwoWay}">HOLD</ToggleButton>
